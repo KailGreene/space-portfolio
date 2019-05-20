@@ -1,14 +1,18 @@
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 #particles-js {
   background-color: #000;
-  position: relative;
+  position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
 }
 body {
   font-family: "Josefin Sans", sans-serif;
-  width: 100%;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 ul {
   list-style: none;
@@ -20,6 +24,7 @@ a {
 }
 .container {
   display: flex;
+  position: absolute;
   flex-direction: column;
 }
 .main-nav {
@@ -29,7 +34,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  border: 0.01rem solid #fff;
 }
 .main-nav li {
   padding: 0 1rem 0 1rem;
@@ -42,6 +47,5 @@ a {
   font-weight: bold;
 }
 .title {
-  position: absolute;
   color: #fff;
 }
